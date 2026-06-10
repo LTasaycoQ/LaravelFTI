@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 
+// ... resto de tus imports
+
 export default defineConfig({
     plugins: [
         laravel({
@@ -12,6 +14,8 @@ export default defineConfig({
     ],
     server: {
         watch: {
+            usePolling: true, // <-- Fuerza a Vite a detectar cambios de forma más agresiva
+            interval: 100,    // Revisa cada 100ms
             ignored: ['**/storage/framework/views/**'],
         },
     },
