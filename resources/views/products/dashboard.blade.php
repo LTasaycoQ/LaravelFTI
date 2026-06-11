@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    Bienvenido al dashboard pe
+ <h1>BIENVENIDO AL DASHBOARD - PRINCIPAL</h1>
 </body>
 </html>
